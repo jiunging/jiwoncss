@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d81e41a0ba02cff47464ac9ab970bd11"></script>
+  <script src="/js/jquery-3.7.1.min.js" defer></script>
+  <script src="/js/main__menu/menu_service.js" defer></script>
+  <link rel="stylesheet" href="/css/main__baselayout/main.css">
+  <link rel="stylesheet" href="/css/main__menu/menu_service.css">
+  <title>service화면</title>
+</head>
+<body>
+  
+  <header>
+        
+    <div class="wrapper">
+
+      <div class="wrapper__header">
+      
+        <!-- header 속성 -->
+        <div class="wrapper__header__content">
+
+          <!-- 회원가입 / 로그인 -->
+          <div class="wrapper__header__above">
+
+            <!-- a 태그 주소 수정 !!! -->
+            <a href="/html/join.html">회원가입</a>
+            <a href="/html/login.html">로그인</a>
+
+          </div>
+
+          <div class="wrapper__header__below">
+
+            <div class="wrapper__header__left">
+              <!-- a 태그 수정 !!!-->
+              <a href="/html/main.html"><img src="/img/KBA_MainLogo.png" alt="로고"></a>
+            </div>
+
+            <div class="wrapper__header__right">
+
+              <a href=""><div class="header__right__item">서비스 소개 <img src="/img/KBA_mascot_black.png" alt="마스코드"></div></a>
+              <a href=""><div class="header__right__item">GAME <img src="/img/KBA_mascot _white.png" alt="마스코드"></div></a>
+              <a href=""><div class="header__right__item">교육영상 <img src="/img/KBA_mascot_black.png" alt="마스코드"></div></a>
+              <a href=""><div class="header__right__item">구독 서비스 <img src="/img/KBA_mascot _white.png" alt="마스코드"></div></a>
+              <a href=""><div class="header__right__item">학습 서비스 <img src="/img/KBA_mascot_black2.png" alt="마스코드"></div></a>
+              <a href=""><div class="header__right__item">바둑 스터디 <img src="/img/KBA_mascot_white2.png" alt="마스코드"></div></a>
+              <a href=""><div class="header__right__item item_sub">고객 센터 <img src="/img/KBA_mascot_blackandwhite.png" alt="마스코드"></div></a>
+              <a href=""><div class="header__right__item item_sub2">사이트맵 <img src="/img/KBA_emblem_use.png" alt="마스코드"></div></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+    <!-- 모달 -->
+  <div id="myModal" class="modal">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  </header>
+
+  <section>
+
+    <div class="service__title"><span>렛츠고 창의적인 바둑스쿨!!</span></div>
+
+    <div class="service__menu">
+      <div id="menu1"><a href="#section1">Let's go 바둑스쿨</a></div>
+      <div id="menu2"><a href="#section2">다운로드</a></div>
+      <div id="menu3"><a href="#section3">서비스</a></div>
+      <div id="menu4"><a href="#section4">바둑기원</a></div>
+    </div>
+
+    <!-- 메뉴 : Let's go 바둑스쿨 -->
+    <div class="service__menu__first" id="section1">
+      <div class="first__content">
+
+        <div class="first__title"><span>Let's go 바둑스쿨</span></div>
+
+        <div class="first__above">
+          <img src="/img/phone.png" alt="바둑스쿨">
+          <img src="/img/KBA_MainLogo.png" alt="로고">
+        </div>
+        
+        <div class="first__below">
+          <span id="first__below__one"><strong>[Let's go 바둑스쿨]</strong>은 한국기원이 어린이 바둑보급을 위해 기획 • 제작한 바둑 입문자용 애니메이션 교육프로그램입니다.</span>
+          <span id="first__below__two">[초등 창의인성 바둑 교과서]와 연계하여 바둑을 처음 접하는 아이들도 쉽고 재미있게 배울 수 있도록 애니메이션 및 게임으로 제작한 영상 콘텐츠로 바둑의 기초와 원리를 재밌는</span>
+          <span id="first__below__three">스토리텔링과 캐릭터를 활용한 애니메이션으로 배우고, 다양한 실전 연습문제를 게임으로 풀어보며 아이들 스스로 실력을 키울 수 있도록 구성해 바둑 교육의 효율성을 높였다. </span>
+          <span>또한 학교 교과과정에 맞춰 1-2학기 수업으로 아이들이 한 판의 바둑을 두고 스스로 계가를 통해 승패를 확인할 수 있도록 총 24차시의 커리큘럼으로 구성되어 있다.</span>
+
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 메뉴 : 게임컨텐츠 -->
+    <div class="service__menu__second" id="section2">
+      <div class="second__content">
+
+        <div class="second__title"><span>다운로드</span></div>
+
+        <div class="second__above">
+          <img src="/img/phone.png" alt="바둑스쿨" id="img1">
+          <img src="/img/computer.png" alt="로고" id="img2">
+        </div>
+        
+        <div class="second__download">
+          <div class="second__download__item">
+            <a href="https://play.google.com/store/apps/details?id=kr.or.baduk.letsgobaduk&hl=ko-KR"><img src="/img/google.jpg" alt="구글플레이" title="구글플레이 바로가기"></a>
+            <span>구글 플레이 "바둑스쿨" 검색 </span>  
+          </div>
+
+          <div class="second__download__item">
+            <a href="https://apps.apple.com/kr/app/%EB%A0%9B%EC%B8%A0%EA%B3%A0-%EB%B0%94%EB%91%91%EC%8A%A4%EC%BF%A8/"><img src="/img/appstore.jpg" alt="앱스토어" title="앱스토어 바로가기"></a>
+            <span>앱스토어 "바둑스쿨" 검색 </span>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <!-- 메뉴 : 학습그룹 -->
+    <div class="service__menu__third" id="section3">
+      <div class="third__content">
+
+        <div class="third__title"><span>서비스</span></div>
+
+        <div class="third__content">
+          <span>해당 컨텐츠는 바둑 교육시스템으로,</span>
+          <span>바둑을 배우고자, 바둑을 가르치고자 하는 분들을 위한 서비스입니다.</span>
+        </div>
+
+        <div class="third__explanation">
+          <div class="third__explanation__detail">
+            <span>교육자 : 학습 그룹 생성 및 숙제 배포</span>
+            <span>학생 : 학습 그룹 등록 및 학습 / 숙제</span>
+            <span>일반사용자 : 컨텐츠 구매 및 수강</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 메뉴 : 바둑기원 -->
+    <div class="service__menu__fourth" id="section4">
+      <div class="fourth__content">
+
+        <div class="fourth__title"><span>바둑기원</span></div>
+
+        <div class="fourth__link">
+          <a href="https://baduk.or.kr/about/history.asp">바둑기원 알아보기</a>
+          <img src="/img/KBA_mascot_blackandwhite.png" alt="바둑기원 마스코드">
+        </div>
+
+        <div class="fourth__map">
+          <span>바둑기원 오시는 길</span>
+          <div id="map" style="width:700px;height:600px;"></div>
+        </div>
+
+        <div class="fourth__come">
+          <div class="fourth__come__detail">
+            <span>서울시 성동구 마장로 210 / 서울 성동구 홍익동 315번지</span>
+            <span>210, Majang-ro, Seongdong-gu, Seoul</span>
+            <span>首尔市城东区马场路210，财团法人韩国棋院</span>
+            <span> ソウル市 城東区 馬場路210 (財)韓国棋院</span>
+            <span> 02-3407-3800 / 02-3407-3875</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div class="footer__wrapper">
+
+      <div class="footer__content">
+
+        <div class="footer__content__header">
+
+          <div class="footer__header__item"><a href="https://baduk.or.kr/">한국기원소개</a></div>
+          <div class="footer__header__item"><a href="https://baduk.or.kr/about/contact.asp">찾아오시는 길</a></div>
+          <div class="footer__header__item"><a href="https://baduk.or.kr/member/provision.asp">이용약관</a></div>
+          <div class="footer__header__item"><a href="https://baduk.or.kr/member/privacy.asp">개익정보처리방침</a></div>
+
+        </div>
+
+        <div class="footer__content__body">
+          <div class="footer__body__item"><span>주소 : 서울시 성동구 마장로 210 전화 : 02-3407-3800 팩스 : 02-3407-3875 이메일 : webmaster@baduk.or.kr 사업자등록번호 : 206-82-03412 출판 : 1967년 7월 7일 등록(라-906호)</span></div>
+          <div class="footer__body__item"><span>(재) J EDU 팀장: 최재홍</span></div>
+          <div class="footer__body__item"><span>ⓒ 2024~ KOREA J EDU ASSOCIATION. All rights reserved.</span></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+</html>

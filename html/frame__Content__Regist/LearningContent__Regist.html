@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+
+  <script src="/js/frame__Content__Regist/Content__Regist.js" defer></script>
+  <script src="/js/frame/DefaultFrame.js" defer></script>
+  <script src="/js/frame__Content__Regist/LearningContent__Regist.js" defer></script>
+  
+  <link rel="stylesheet" href="/css/frame__baselayout/frame.css">
+  <link rel="stylesheet" href="/css/frame__Content__Regist/Content__Regist.css">
+  <title>학습 컨텐츠 등록</title>
+</head>
+<body>
+  
+  <div class="background">
+    <div class="frame__wrapper">
+      <div class="frame__content">
+
+        <!-- nav bar -->
+        <!-- 이곳이 권한 마다 변경 -->
+        <div class="frame__left">
+
+          <div class="frame__left__header">
+            <img src="/img/KBA_MainLogo.png" alt="로고" title="한국기원">
+          </div>
+          
+          <div class="frame__left__body">
+
+            <!-- 일반 사용자 권한 불러올 메뉴 -->
+            <div class="section__left__menu__default__user">
+
+              <button type="button" class="section__sub__menu" value="일반수강생"> <img src="/img/icon1.png" alt="마이페이지 아이콘"> MY PAGE</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="MY PAGE">MY PAGE</div>
+                <div class="small__menu" data-title="회원정보수정">회원정보수정</div>
+              </div>
+
+              <button type="button" class="section__sub__menu" value="GAME"><img src="/img/mouse_icon.png" alt="마우스아이콘"> GAME</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="게임 컨텐츠" >게임 컨텐츠</div>
+                <div class="small__menu" data-title="구매 이력">구매 이력</div>
+              </div>
+
+              <button type="button" class="section__sub__menu" value="구독"><img src="/img/vegas.png" alt="화살표"> SUBSCRIBE</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="구독상품">구독상품</div>
+                <div class="small__menu" data-title="학습상태">학습상태</div>
+              </div>
+
+            </div>
+
+            <!-- 학생 권한 불러올 메뉴 -->
+            <div class="section__left__menu__student">
+
+              <button type="button" class="section__sub__menu" value="학생수강생"> <img src="/img/icon1.png" alt="마이페이지 아이콘"> MY PAGE</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="MY PAGE">MY PAGE</div>
+                <div class="small__menu" data-title="회원정보수정">회원정보수정</div>
+              </div>
+
+              <button type="button" class="section__sub__menu" value="학습그룹"><img src="/img/pen.png" alt="화살표"> 학습그룹</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="학습 그룹 조회">학습 그룹 조회</div>
+                <div class="small__menu" data-title="학습 그룹 신청">학습 그룹 신청</div>
+              </div>
+
+              
+              <button type="button" class="section__sub__menu" value="HOMEWORK"><img src="/img/vegas.png" alt="화살표">HOMEWORK</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="숙제조회">숙제조회</div>
+                <div class="small__menu" data-title="숙제제출내역">숙제제출내역</div>
+              </div>
+              
+              <button type="button" class="section__sub__menu" value="GAME"><img src="/img/mouse_icon.png" alt="마우스아이콘"> GAME</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="렛츠고바둑스쿨" >렛츠고바둑스쿨</div>
+              </div>
+
+            </div>
+
+            <!-- 선생님 권한 불러올 메뉴 -->
+            <div class="section__left__menu__teacher">
+
+              <button type="button" class="section__sub__menu" value="선생님"> <img src="/img/icon1.png" alt="마이페이지 아이콘"> MY PAGE</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="MY PAGE">MY PAGE</div>
+                <div class="small__menu" data-title="회원정보수정">회원정보수정</div>
+              </div>
+
+              <button type="button" class="section__sub__menu" value="GAME"><img src="/img/mouse_icon.png" alt="마우스아이콘"> GAME</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="게임컨텐츠조회" >게임컨텐츠조회</div>
+                <div class="small__menu" data-title="구매이력" >구매이력</div>
+              </div>
+
+              <button type="button" class="section__sub__menu" value="학습그룹"><img src="/img/pen.png" alt="화살표">학습그룹</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="학습 그룹 조회">학습 그룹 조회</div>
+                <div class="small__menu" data-title="학습 그룹 등록">학습 그룹 등록</div>
+                <div class="small__menu" data-title="수강생 현황">수강생 현황</div>
+              </div>
+
+              
+              <button type="button" class="section__sub__menu" value="HOMEWORK"><img src="/img/vegas.png" alt="화살표">HOMEWORK</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="숙제조회">숙제조회</div>
+                <div class="small__menu" data-title="숙제만들기">숙제만들기</div>
+              </div>
+              
+            </div>
+
+            <!-- 관리자 권한 불러올 메뉴 -->
+            <div class="section__left__menu__admin">
+
+              <button type="button" class="section__sub__menu" value="관리자"> <img src="/img/icon1.png" alt="마이페이지 아이콘">MY PAGE</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="MY PAGE">MY PAGE</div>
+                <div class="small__menu" data-title="회원정보수정">회원정보수정</div>
+              </div>
+
+              <button type="button" class="section__sub__menu" value="회원관리"><img src="/img/people.png" alt="화살표">회원관리</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="일반">일반</div>
+                <div class="small__menu" data-title="학생">학생</div>
+                <div class="small__menu" data-title="교육자">교육자</div>
+              </div>
+
+              <button type="button" class="section__sub__menu" value="학습/GAME 관리"><img src="/img/mouse_icon.png" alt="마우스아이콘">학습/GAME 관리</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="게임컨텐츠조회" >게임 컨텐츠 조회</div>
+                <div class="small__menu" data-title="게임컨텐츠등록" >게임 컨텐츠등록</div>
+                <div class="small__menu" data-title="학습컨텐츠조회" >학습 컨텐츠 조회</div>
+                <div class="small__menu" data-title="학습컨텐츠등록" >학습 컨텐츠등록</div>
+              </div>
+
+              <button type="button" class="section__sub__menu" value="게시판관리"><img src="/img/pen.png" alt="화살표">게시판관리</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="공지사항 등록">공지사항 등록</div>
+                <div class="small__menu" data-title="FAQ 등록">FAQ 등록</div>
+                <div class="small__menu" data-title="Q&A 등록">Q&A 등록</div>
+              </div>
+
+              <button type="button" class="section__sub__menu" value="문의사항"><img src="/img/question.png" alt="화살표">문의사항</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="숙제조회">문의사항</div>
+              </div>
+              
+              <button type="button" class="section__sub__menu" value="매출조회"><img src="/img/money.png" alt="화살표">매출조회</button>
+              <div class="sub__menu__list">
+                <div class="small__menu" data-title="숙제조회">매출조회</div>
+              </div>
+              
+            </div>
+
+          </div>
+
+
+          <div class="frame__left__footer">
+
+            <div class="frame__footer__above"><img src="/img/link.png" alt="링크사진"><span>Site Menu</span></div>
+
+            <div class="frame__footer__below">
+              <a href="/html/main.html">HOME</a>
+              <a href="/html/menu_center.html">공지사항</a>
+              <a href="/html/menu_center.html">FAQ</a>
+              <a href="/html/menu_center.html">Q&A</a>
+              <a href="/html/menu_game.html">사용자 가이드</a>
+            </div>
+
+            <div class="frame__footer__info">
+              <a href="">Copyright © J-EDU CJH All rights reserved.</a>
+              
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- 내용 -->
+        <div class="frame__right">
+
+          <!-- 우측 사용자 페이지 헤더 -->
+          <div class="frame__right__header">
+
+            <div class="frame__header__left">
+
+              <!-- 상세 메뉴 확인 -->
+              <div class="frame__left__above">
+                
+                <div id="displayMenu"></div>
+                <div id="displayMenu2"></div>
+              </div>
+              <!-- 타이틀 -->
+              <div class="frame__left__below">
+                <div id="title"></div>
+              </div>
+
+            </div>
+
+            <!-- 검색 -->
+            <form action="" method="get" class="frame__header__search">
+
+              <input type="text" value="" name="search" placeholder="Search for...">
+              <button>검색</button>
+
+            </form>
+
+            <!-- 로그 아웃 등 -->
+            <div class="frame__header__right">
+
+              <div class="frame__right__msg">
+                <img src="/img/message.png" alt="메세지">
+              </div>
+
+              <div class="frame__header__name">
+                <img src="/img/profile.png" alt="프로필 사진">
+                <span>홍길동님</span>
+              </div>
+              <button>로그아웃</button>
+
+            </div>
+
+
+          </div>
+
+          
+
+          <!-- 우측 사용자 페이지 바디 -->
+          <!-- 이곳이 권한 마다 변경 -->
+          <div class="frame__right__body">
+
+            
+            <div class="wrap">
+              <div class="wrap__content">
+                <form action="" method="get" class="regist__wrap">
+
+                  <!-- 컨텐츠 등록 -->
+                  <div class="regist__left">
+
+                    <div class="regist__left__above">
+                      <span>학습 컨텐츠 등록</span>
+                      <div class="left__above__button">
+                        <button>등록</button>
+                        <button>취소</button>
+                      </div>
+                    </div>
+                    <div class="regist__left__below">
+
+                      
+
+                      <!-- 제목 입력 -->
+                      <div class="regist__below__item">
+                        <span>학습자료명</span>
+                        <input type="text" id="learn__title" placeholder="제목을 입력하세요.">
+                      </div>
+
+                      <!-- 구분 선택 -->
+                      <div class="regist__below__item">
+                        <span>자료구분</span>
+                        <select name="item__select" id="type__select">
+                          <option value="none">자료를 구분해주세요.</option>
+                          <option value="0">튜토리얼</option>
+                          <option value="1">교육영상</option>
+                        </select>
+                      </div>
+
+                      <!-- 유형 선택 -->
+                      <div class="regist__item__select">
+                        <span>자료유형</span>
+                        <div class="item__subMenu">
+                          <input type="checkbox" value="0" id="document__video" name="document__video"> 
+                          <span>동영상</span>
+                        </div>
+                        <div class="item__subMenu">
+                          <input type="checkbox" value="1" id="document__book" name="document__book"> 
+                          <span>교재</span>
+                        </div>
+                        <div class="item__subMenu">
+                          <input type="checkbox" value="2" id="document__web" name="document__web"> 
+                          <span>웹사이트</span>
+                        </div>
+                      </div>
+
+                      <!-- 자료 파일 주소 -->
+                      <div class="regist__below__item">
+                        <span>자료파일주소</span>
+                        <input type="text" name="filePath" placeholder="자료 주소를 입력하세요.">
+                      </div>  
+
+                      <!-- 서비스 구분 -->
+                      <div class="regist__below__item">
+                        <span>서비스구분</span>
+                        <select name="item__select" id="select__price__type">
+                          <option value="none">옵션을 선택해주세요.</option>
+                          <option value="1">full(유료)</option>
+                          <option value="0">shorts(무료)</option>
+                        </select>
+                      </div>
+
+                      
+                      <!-- 컨텐츠 설명 -->
+                      <div class="regist__item__textArea">
+                        <span>패키지 내용</span>
+                        <textarea type="text" id="Learning__textArea" autocomplete="off" placeholder="패키지 내용을 입력해주세요."></textarea>
+                      </div>
+                      
+                      <!-- 구독 가능 인원 -->
+                      <div class="regist__item__learning__file">
+                        <span>썸네일</span>
+    
+                        <input type="file" id="fileInput" autocomplete="off" placeholder="숫자만 입력해주세요.">
+                        <div class="dropBox">
+                          <h5 id="fileInput">이곳에 파일을 드롭해주세요. </h5>
+                        </div>
+
+                      </div>
+                      
+                      
+
+                    </div>
+
+                  </div>
+
+                  <!-- 컨텐츠 등록 현황 -->
+                  <div class="regist__right">
+
+                    <div class="regist__right__wrapper">
+
+                      <div class="regist__content__post">
+
+                        <img id="previewImage" src="/img/background.png" alt="">
+                        <div id="post__type"></div>
+                        <div id="post__title"></div>
+                        <div id="post__level"></div>
+                        <div id="post__count"></div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                </form>
+              </div>
+            </div>
+
+          </div> 
+        </div>
+
+
+        <!-- 내용 여기까지 -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
